@@ -4,23 +4,23 @@ set -euo pipefail
 echo "Symlinking dotfiles"
 
 root_files=(
-	".zshrc"
-	".ignore"
-	".tmux.conf"
-	".vimrc"
-	".gitconfig"
-	".gitignore"
-	".eslintrc.json"
-	".prettierrc.json"
-	"com.googlecode.iterm2.plist"
+  ".zshrc"
+  ".ignore"
+  ".tmux.conf"
+  ".vimrc"
+  ".gitconfig"
+  ".gitignore"
+  ".eslintrc.json"
+  ".prettierrc.json"
+  "com.googlecode.iterm2.plist"
 )
 for root_file in "${root_files[@]}"; do
-	ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"
+  ln -s "$(pwd)/files/$root_file" "$HOME/$root_file"
 done
 
 root_directories=(
-	".vim/"
+  ".vim/"
 )
 for root_directory in "${root_directories[@]}"; do
-	ln -s "$(pwd)/files/$root_directory"* "$HOME/$root_directory"
+  ln -s "$(pwd)/files/$root_directory"* "$HOME/$root_directory"
 done

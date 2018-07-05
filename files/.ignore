@@ -1,0 +1,18 @@
+# GENERAL
+.git/
+.DS_Store
+*.jpg
+*.png
+*.gif
+*.svg
+*.ico
+*.mp3
+*.mp4
+
+# JAVASCRIPT
+node_modules/
+package-lock.json
+.next/
+storybook-static/
+cjs/
+es/
